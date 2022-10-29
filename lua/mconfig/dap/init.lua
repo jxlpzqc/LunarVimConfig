@@ -17,4 +17,8 @@ lvim.builtin.dap.on_config_done = function()
     })
     dap.continue()
   end, "Start" }
+  -- Map for hover in visual mode
+  vim.keymap.set("v","<C-k>",function ()
+    require("dapui").eval()
+  end)
 end
