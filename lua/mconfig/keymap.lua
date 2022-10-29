@@ -31,6 +31,7 @@ lvim.builtin.which_key.mappings["t"] = {
   q = { "<cmd>TroubleToggle quickfix<cr>", "QuickFix" },
   l = { "<cmd>TroubleToggle loclist<cr>", "LocationList" },
   w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "Workspace Diagnostics" },
+  T = { "<cmd>TodoTrouble<cr>","Todo List"}
 }
 lvim.builtin.which_key.mappings.l.r = { "<cmd>Lspsaga rename<CR>", "Rename" }
 lvim.builtin.which_key.mappings["o"] = { "<cmd>SymbolsOutline<cr>", "Toggle Outline" }

@@ -15,6 +15,15 @@ lvim.plugins = {
     "folke/trouble.nvim",
     cmd = "TroubleToggle"
   },
+  {
+    "folke/todo-comments.nvim",
+    event = "BufRead",
+    config = function()
+      require("todo-comments").setup()
+    end,
+  },
+  require("mconfig.plugin.lsp-signature"),
+  require("mconfig.plugin.rainbow"),
   require("mconfig.plugin.hop"),
   require("mconfig.plugin.git-blame"),
   require("mconfig.plugin.lspsaga"),

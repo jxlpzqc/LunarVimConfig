@@ -1,4 +1,4 @@
--- TODO: User Config for predefined plugins
+-- User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
@@ -39,5 +39,11 @@ lvim.builtin.treesitter.ensure_installed = {
   "yaml",
 }
 
-lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enable = true
+
+-- set lualine
+lvim.builtin.lualine.sections.lualine_a = { "mode" }
+lvim.builtin.lualine.inactive_sections.lualine_a = { "mode" }
+
+-- set whick key
+lvim.builtin.which_key.setup.plugins.registers = true
