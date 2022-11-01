@@ -22,6 +22,14 @@ lvim.plugins = {
       require("todo-comments").setup()
     end,
   },
+  -- Begin markdown
+  {
+    "preservim/vim-markdown",
+    event = "BufRead",
+    ft = { "markdown" },
+  },
+  require("mconfig.plugin.markdown-preview"),
+  -- End markdown
   require("mconfig.plugin.lsp-signature"),
   require("mconfig.plugin.rainbow"),
   require("mconfig.plugin.hop"),
