@@ -4,7 +4,10 @@ return {
   config = function()
     local saga = require("lspsaga")
     local keymap = vim.keymap.set
-    saga.init_lsp_saga({ border_style = "rounded", code_action_lightbulb = { virtual_text = false } })
+    saga.setup({
+      ui = { border = "rounded" },
+      lightbulb = { virtual_text = false }
+    })
     keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>", { silent = true, desc = "Open finder" })
     -- Disable lvim buffer mapping for `gd`
     lvim.lsp.buffer_mappings.normal_mode["gd"] = nil

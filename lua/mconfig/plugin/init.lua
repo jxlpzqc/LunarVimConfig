@@ -1,5 +1,11 @@
 lvim.plugins = {
   {
+    "windwp/nvim-ts-autotag",
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end,
+  },
+  {
     "Mofiqul/vscode.nvim"
   },
   {
@@ -31,8 +37,8 @@ lvim.plugins = {
   require("mconfig.plugin.markdown-preview"),
   -- End markdown
   require("mconfig.plugin.lsp-signature"),
-  require("mconfig.plugin.rainbow"),
+  -- require("mconfig.plugin.rainbow"),
   require("mconfig.plugin.hop"),
-  require("mconfig.plugin.git-blame"),
+  -- require("mconfig.plugin.git-blame"),
   require("mconfig.plugin.lspsaga"),
 }
