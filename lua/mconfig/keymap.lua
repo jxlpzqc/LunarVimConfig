@@ -6,6 +6,8 @@ lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 -- Solution in https://github.com/LunarVim/LunarVim/issues/1857
 lvim.keys.normal_mode["<M-j>"] = false
 lvim.keys.normal_mode["<M-k>"] = false
+lvim.keys.visual_mode["<M-j>"] = false
+lvim.keys.visual_mode["<M-k>"] = false
 
 -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
 -- we use protected-mode (pcall) just in case the plugin wasn't loaded yet.
