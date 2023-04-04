@@ -34,6 +34,7 @@ lvim.plugins = {
     event = "BufRead",
     ft = { "markdown" },
   },
+  { 'ojroques/nvim-osc52' },
   require("mconfig.plugin.markdown-preview"),
   -- End markdown
   require("mconfig.plugin.lsp-signature"),
