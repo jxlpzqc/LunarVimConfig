@@ -27,6 +27,8 @@ lvim.builtin.telescope.defaults.mappings = {
   },
 }
 
+lvim.builtin.cmp.mapping["<C-u>"] = require("cmp").mapping.complete();
+
 -- Use which-key to add extra bindings with the leader-key prefix
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 lvim.builtin.which_key.mappings["t"] = {
