@@ -9,9 +9,7 @@ return {
       lightbulb = { virtual_text = false }
     })
     keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>", { silent = true, desc = "Open finder" })
-    -- Disable lvim buffer mapping for `gd`
-    lvim.lsp.buffer_mappings.normal_mode["gd"] = nil
-    keymap("n", "gd", "<cmd>Lspsaga peek_definition<CR>", { silent = true, desc = "Goto definitions" })
+    keymap("n", "gp", "<cmd>Lspsaga peek_definition<CR>", { silent = true, desc = "Peek definitions" })
     keymap({ "n", "v" }, "ga", "<cmd>Lspsaga code_action<CR>", { silent = true, desc = "Show code actions" })
     -- Diagnsotic jump can use `<c-o>` to jump back
     keymap("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>", { silent = true })

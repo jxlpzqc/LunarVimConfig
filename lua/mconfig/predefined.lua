@@ -50,6 +50,4 @@ lvim.builtin.which_key.setup.plugins.registers = true
 
 lvim.builtin.project.patterns = { ".git", ".svn" };
 
--- a trick for enable light mode for vscode.nvim
-lvim.builtin.theme.name = "tokyonight"
 vim.o.background = "light"

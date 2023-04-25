@@ -34,12 +34,19 @@ lvim.plugins = {
     event = "BufRead",
     ft = { "markdown" },
   },
-  { 'ojroques/nvim-osc52' },
-  require("mconfig.plugin.markdown-preview"),
   -- End markdown
   require("mconfig.plugin.lsp-signature"),
   -- require("mconfig.plugin.rainbow"),
   require("mconfig.plugin.hop"),
   -- require("mconfig.plugin.git-blame"),
   require("mconfig.plugin.lspsaga"),
+  {
+    "github/copilot.vim",
+    config = function ()
+      vim.cmd([[
+        inoremap <silent><script><expr> <C-i> copilot#Accept("\<CR>")
+      ]])
+      vim.g.copilot_no_tab_map = true
+    end
+  }
 }
