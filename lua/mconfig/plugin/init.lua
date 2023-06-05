@@ -42,11 +42,12 @@ lvim.plugins = {
   require("mconfig.plugin.lspsaga"),
   {
     "github/copilot.vim",
-    config = function ()
+    config = function()
       vim.cmd([[
-        inoremap <silent><script><expr> <C-i> copilot#Accept("\<CR>")
+        inoremap <silent><script><expr> <C-a> copilot#Accept("\<CR>")
       ]])
       vim.g.copilot_no_tab_map = true
     end
-  }
+  },
+  require("mconfig.plugin.tmux")
 }
