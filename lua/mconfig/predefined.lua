@@ -45,7 +45,7 @@ lvim.builtin.treesitter.highlight.enable = true
 lvim.builtin.lualine.sections.lualine_a = { "mode" }
 lvim.builtin.lualine.inactive_sections.lualine_a = { "mode" }
 
--- set whick key
+-- set which key
 lvim.builtin.which_key.setup.plugins.registers = true
 
 lvim.builtin.project.patterns = { ".git", ".svn" };

@@ -5,9 +5,7 @@ lvim.plugins = {
       require("nvim-ts-autotag").setup()
     end,
   },
-  {
-    "Mofiqul/vscode.nvim"
-  },
+  { "ellisonleao/gruvbox.nvim", priority = 1000 },
   {
     "tpope/vim-surround",
   },
