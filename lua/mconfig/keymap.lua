@@ -40,7 +40,9 @@ lvim.builtin.which_key.mappings["t"] = {
   q = { "<cmd>TroubleToggle quickfix<cr>", "QuickFix" },
   l = { "<cmd>TroubleToggle loclist<cr>", "LocationList" },
   w = { "<cmd>TroubleToggle workspace_diagnostics<cr>", "Workspace Diagnostics" },
-  T = { "<cmd>TodoTrouble<cr>","Todo List"}
+  T = { "<cmd>TodoTrouble<cr>", "Todo List" }
 }
 lvim.builtin.which_key.mappings.l.r = { "<cmd>Lspsaga rename<CR>", "Rename" }
-lvim.builtin.which_key.mappings["o"] = { "<cmd>SymbolsOutline<cr>", "Toggle Outline" }
+lvim.builtin.which_key.mappings["o"] = { "<cmd>AerialToggle<cr>", "Toggle Outline" }
+
+lvim.builtin.which_key.mappings.l.h = { "<cmd>ClangdSwitchSourceHeader<CR>", "Switch Header/Source" }

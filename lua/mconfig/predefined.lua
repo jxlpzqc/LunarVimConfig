@@ -48,6 +48,5 @@ lvim.builtin.lualine.inactive_sections.lualine_a = { "mode" }
 -- set which key
 lvim.builtin.which_key.setup.plugins.registers = true
 
-lvim.builtin.project.patterns = { ".git", ".svn" };
-
-vim.o.background = "light"
+-- lvim.builtin.project.patterns = { ".git", ".svn" };
+lvim.builtin.project.manual_mode = true
